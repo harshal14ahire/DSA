@@ -17,18 +17,19 @@ class ArrayElementsShifting{
     {
 
       
-       for( i=0;i<shift;i++)
+       for( i=0;i<shift;i++)//iterate through no of times times shift
+
        {
 
-         tmp=a[0];
+         tmp=a[0];// take evey time a[0] to shift to right most place in arry
          for( j=0;j<=a.length-1;j++)
          {
-            if(j+1<a.length)
+            if(j+1<a.length)// handle array index out of bound
             {
-                a[j]=a[j+1];
+                a[j]=a[j+1];// move forwards all elemetns to create last vacant poistion
             }
          }
-         a[j-1]=tmp;
+         a[j-1]=tmp;// stor elemet at last postion in array
 
        }
     }
